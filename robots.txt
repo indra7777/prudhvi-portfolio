@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thinkgrid.netlify.app/sitemap.xml
+Sitemap: https://thinkgridstudio.com/sitemap.xml
