@@ -1,2 +1,9 @@
-# Netlify redirects file
-/*    /index.html   200
+# Force HTTPS redirect
+http://thinkgrid.netlify.app/* https://thinkgrid.netlify.app/:splat 301!
+
+# Force HTTPS for custom domain (if you add one later)
+http://www.yourdomain.com/* https://www.yourdomain.com/:splat 301!
+http://yourdomain.com/* https://yourdomain.com/:splat 301!
+
+# Fallback for any HTTP requests
+http://*/*  https://:host/:splat  301!
