@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkGrid - Creative Video & Design Studio</title>
+    <meta name="description" content="Professional video editing and design services for content creators, businesses, and filmmakers. We create stunning videos and designs that convert.">
+    <meta name="keywords" content="video editing, design, youtube thumbnails, video production, creative agency, content creation">
+    <meta name="author" content="ThinkGrid">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thinkgrid.netlify.app/">
+    <meta property="og:title" content="ThinkGrid - Creative Video & Design Studio">
+    <meta property="og:description" content="Professional video editing and design services for content creators, businesses, and filmmakers.">
+    <meta property="og:image" content="https://thinkgrid.netlify.app/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thinkgrid.netlify.app/">
+    <meta property="twitter:title" content="ThinkGrid - Creative Video & Design Studio">
+    <meta property="twitter:description" content="Professional video editing and design services for content creators, businesses, and filmmakers.">
+    <meta property="twitter:image" content="https://thinkgrid.netlify.app/logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav">
+            <div class="nav-brand">
+                <div class="logo">
+                    <div class="logo-icon-compact">
+                        <svg viewBox="0 0 100 100" class="logo-svg">
+                            <rect x="10" y="10" width="80" height="80" rx="15" fill="#1e9bff"/>
+                            <circle cx="50" cy="50" r="8" fill="white"/>
+                            <circle cx="50" cy="28" r="6" fill="white"/>
+                            <circle cx="50" cy="72" r="6" fill="white"/>
+                            <circle cx="28" cy="50" r="6" fill="white"/>
+                            <circle cx="72" cy="50" r="6" fill="white"/>
+                            <circle cx="35" cy="35" r="5" fill="white"/>
+                            <circle cx="65" cy="35" r="5" fill="white"/>
+                            <circle cx="35" cy="65" r="5" fill="white"/>
+                            <circle cx="65" cy="65" r="5" fill="white"/>
+                            <line x1="50" y1="42" x2="50" y2="28" stroke="white" stroke-width="3"/>
+                            <line x1="50" y1="58" x2="50" y2="72" stroke="white" stroke-width="3"/>
+                            <line x1="42" y1="50" x2="28" y2="50" stroke="white" stroke-width="3"/>
+                            <line x1="58" y1="50" x2="72" y2="50" stroke="white" stroke-width="3"/>
+                            <line x1="43" y1="43" x2="35" y2="35" stroke="white" stroke-width="2.5"/>
+                            <line x1="57" y1="43" x2="65" y2="35" stroke="white" stroke-width="2.5"/>
+                            <line x1="43" y1="57" x2="35" y2="65" stroke="white" stroke-width="2.5"/>
+                            <line x1="57" y1="57" x2="65" y2="65" stroke="white" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">ThinkGrid</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="btn-outline">Get Quote</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <span>✨ Creative Studio</span>
+                    </div>
+                    <h1>
+                        <div class="line-1">Bring <span class="highlight">Your</span></div>
+                        <div class="line-2"><span class="highlight">Vision</span> to Life</div>
+                    </h1>
+                    <p>Professional video editing and design services for content creators, businesses, and filmmakers who want to stand out and drive results.</p>
+                    
+                    <!-- <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                    </div> -->
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get Started</a>
+                        <a href="#portfolio" class="btn-secondary">View Our Work</a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <!-- Hero Video with high z-index for controls -->
+                    <div class="hero-video-container">
+                        <div id="herovideo">
+                            <iframe 
+                            id="heroVideoMain"
+                            src="https://www.youtube.com/embed/DFneHWN-EkA?si=piKYJewSzkrJqqJ8&autoplay=1&mute=1&controls=1&loop=1&playlist=DFneHWN-EkA" 
+                            title="ThinkGrid Video Project - Creative Video Editing" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen 
+                            width="560" 
+                            height="315">
+                        </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <div class="card-icon">🎬</div>
+                            <span>Video Editing</span>
+                        </div>
+                        <div class="card card-2">
+                            <div class="card-icon">🎨</div>
+                            <span>Design</span>
+                        </div>
+                        <div class="card card-3">
+                            <div class="card-icon">⚡</div>
+                            <span>Fast Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>What We Do Best</h2>
+                <p>Professional video editing and design services tailored to your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>From short-form social media content to long-form documentaries, we create videos that captivate and convert.</p>
+                    <ul>
+                        <li>YouTube videos & series</li>
+                        <li>Social media reels</li>
+                        <li>Corporate videos</li>
+                        <li>Short films</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Starts from 10$ →</a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21,15 16,10 5,21"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Poster & Thumbnail Design</h3>
+                    <p>Eye-catching designs that grab attention and drive clicks across all platforms and mediums.</p>
+                    <ul style="padding-top: 1.8rem;">
+                        <li>YouTube thumbnails</li>
+                        <li>Event posters</li>
+                        <li>Social media graphics</li>
+                        <li>Business materials</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Starts from 5$ →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=600&fit=crop&crop=faces" alt="Creative Team" class="team-image">
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <span class="section-badge">About Us</span>
+                    <h2>We Are Creative Professionals Who Love What We Do</h2>
+                    <p>ThinkGrid is your global creative partner for professional video editing and stunning YouTube thumbnails. We work with creators and businesses from the US, UK, and beyond — delivering quality,speed, and style with every project.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>🎥 Professional Editors</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>🚀 Fast Turnaround</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>🎯 International Clients</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>💬 Clear Communication</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary">Work With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-tab="all">All</button>
+                <button class="tab-btn" data-tab="video">Video Editing</button>
+                <button class="tab-btn" data-tab="design">Design</button>
+                <button class="tab-btn" data-tab="shorts">Shorts</button>
+            </div>
+            <div class="portfolio-container">
+                <button class="scroll-btn scroll-left" id="scrollLeft">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                </button>
+                <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/DFneHWN-EkA?si=piKYJewSzkrJqqJ8" 
+                            title="ThinkGrid Video Project - Creative Video Editing" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Creative Video Editing</h4>
+                            <p>Dynamic storytelling and visual effects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/04yN0MB6qBM?si=g2HZ-yLKBChhS8Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="portfolio-overlay">
+                            <h4>YouTube Thumbnails</h4>
+                            <p>High-converting thumbnail designs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/2ZZnATQ3Y_I?si=9gSbEuWxT2Ll5P-f" 
+                            title="ThinkGrid Video Project - Creative Video Editing" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Creative Video Editing</h4>
+                            <p>Dynamic storytelling and visual effects</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/HsefGyp-oAY?si=2OePVHSLVbnm9mQ3" 
+                            title="ThinkGrid Project Video - Professional Video Editing" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Professional Video Editing</h4>
+                            <p>Our latest project showcase</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/HWRQYFe5UxM?si=rt9rxXnlygGvwZwN" 
+                            title="ThinkGrid Project Video - Professional Video Editing" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Professional Video Editing</h4>
+                            <p>Our latest project showcase</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-image">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AUHGfkeYsGE?si=cR9EOFKUHxJwakaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Social Media Reels</h4>
+                            <p>Engaging short-form content</p>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                
+               <div class="portfolio-item" data-category="shorts">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/eC43gpb2x_Q?si=W5QnhaWhp4AUp7Yl" 
+                            title="YouTube Short - Tutorial Content" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Tutorial Shorts</h4>
+                            <p>Quick educational content</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                <div class="portfolio-item" data-category="shorts">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ZVpcmyywH9A?si=ybCB30Qg0V05sjCO" 
+                            title="YouTube Short - Brand Story" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Story Shorts</h4>
+                            <p>Compelling brand narratives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shorts">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/kZiFsbcTp48?si=aDExhcjYzh8EIb6j" 
+                            title="YouTube Short - Brand Story" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Story Shorts</h4>
+                            <p>Compelling brand narratives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shorts">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ezu2tBnUz5I?si=XSwKmZxqLyDEJvU1" 
+                            title="YouTube Short - Brand Story" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Story Shorts</h4>
+                            <p>Compelling brand narratives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="shorts">
+                    <div class="portfolio-video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/oTpm8tSjUAY?si=j-CGdCuOX-Nih8jS" 
+                            title="YouTube Short - Brand Story" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Story Shorts</h4>
+                            <p>Compelling brand narratives</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-design">
+                        <img src="./image1.jpg" alt="Poster Design" class="design-image">
+                        <div class="portfolio-overlay">
+                            <h4>Poster Design</h4>
+                            <p>Eye-catching event posters</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-design">
+                        <img src="./image2.jpg" alt="YouTube Thumbnail Design" class="design-image">
+                        <div class="portfolio-overlay">
+                            <h4>YouTube Thumbnails</h4>
+                            <p>High-converting thumbnail designs</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-design">
+                        <img src="./image3.jpg" alt="Social Media Graphics" class="design-image">
+                        <div class="portfolio-overlay">
+                            <h4>Social Media Graphics</h4>
+                            <p>Engaging social media visuals</p>
+                        </div>
+                    </div>
+                </div>
+                 
+                </div>
+                <button class="scroll-btn scroll-right" id="scrollRight">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The editing quality was top-notch. Their attention to detail in storytelling and cinematic flow really brought our short film to life. Especially loved the title sequence – it added so much punch and professionalism. Would definitely recommend their work for anyone in the short film industry!
+"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Kiran Dagani</h4>
+                            <span>Short Film Association Member & Owner of Voice of Vijayawada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We needed a bold and eye-catching poster for Mahashivaratri, and they delivered beyond expectations. The colors, layout, and detailing were just perfect for the occasion. It got us great engagement both online and offline. Super satisfied with their creative touch!
+"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Tharun</h4>
+                            <span>Creative Head, V Agency</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The short video edit was spot-on — tight pacing, smooth transitions, and great use of music. It grabbed attention instantly and delivered the message in under a minute, just the way we wanted. Their editing added real value to our content.
+"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>K Lavanya</h4>
+                            <span> Content Strategist , Hello TV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let's bring your creative vision to life. Get in touch with us today for a free consultation and quote.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <a href="mailto:thinkgrid.agency@gmail.com">thinkgrid.agency@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <a href="tel:+917799450500">+91 7799450500</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">What service are you interested in?</option>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="poster-design">Poster & Thumbnail Design</option>
+                            <option value="both">Both Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ThinkGrid</h3>
+                    <p>Creative Video & Design Studio</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Video Editing</a></li>
+                            <li><a href="#services">Poster Design</a></li>
+                            <li><a href="#services">Thumbnails</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/prudhvifilms" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.youtube.com/@ThinkGridOfficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                    <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+                                </svg>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ThinkGrid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
