@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { margin: 20px; font-family: Arial, sans-serif; }
+        .test-box { 
+            width: 200px; 
+            height: 100px; 
+            margin: 10px; 
+            border: 2px solid #000; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Loading Test</h1>
+    
+    <div class="test-box" style="background: var(--primary-color); color: white;">
+        Primary Color Test
+    </div>
+    
+    <div class="test-box btn-primary">
+        Button Primary Test
+    </div>
+    
+    <div class="test-box portfolio-item">
+        Portfolio Item Test
+    </div>
+    
+    <script>
+        console.log('Test page loaded');
+        
+        // Test CSS variables
+        const root = getComputedStyle(document.documentElement);
+        console.log('Primary color:', root.getPropertyValue('--primary-color'));
+        
+        // Test specific classes
+        const btnElement = document.querySelector('.btn-primary');
+        if (btnElement) {
+            const styles = getComputedStyle(btnElement);
+            console.log('Button background:', styles.background);
+            console.log('Button padding:', styles.padding);
+        }
+    </script>
+</body>
+</html>
