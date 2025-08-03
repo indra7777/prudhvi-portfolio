@@ -232,7 +232,7 @@ body {
 
 .hero-video-container {
   position: relative;
-  z-index: 100;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,6 +316,47 @@ body {
   font-weight: 500;
 }
 
+.hero-value-props {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.value-prop {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  flex: 1;
+  min-width: 200px;
+}
+
+.value-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.value-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.value-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.value-desc {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+}
+
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -397,7 +438,7 @@ body {
 }
 
 .card-1 {
-  top: -5%;
+  top: -15%;
   right: 30%;
   animation-delay: 0s;
 }
@@ -975,6 +1016,48 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--gradient-primary);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -1269,6 +1352,65 @@ body:not(.loaded) * {
   
   .video-preview {
     max-height: 200px;
+  }
+  
+  /* Improved mobile portfolio */
+  .portfolio-container {
+    gap: 0.5rem;
+  }
+  
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .scroll-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .portfolio-grid {
+    height: 480px;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .portfolio-item {
+    width: 280px;
+    height: 200px;
+  }
+  
+  /* Touch-friendly tabs */
+  .portfolio-tabs {
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding: 0 0.5rem;
+  }
+  
+  .tab-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+  
+  /* Mobile form improvements */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .hero-value-props {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .value-prop {
+    min-width: 100%;
   }
   
   .nav-menu {

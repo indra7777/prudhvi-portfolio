@@ -522,55 +522,8 @@ if (portfolioSection && portfolioGrid) {
     });
 }
 
-// Hero video audio activation on user interaction (ONLY for heroVideoMain)
-let heroAudioActivated = false;
-
-function enableHeroAudio() {
-    const heroVideo = document.getElementById('heroVideoMain');
-    
-    if (!heroAudioActivated && heroVideo) {
-        heroAudioActivated = true;
-        
-        // Change mute to unmute ONLY for the hero video
-        const currentSrc = heroVideo.src;
-        const newSrc = currentSrc.replace('&mute=1', '&mute=0');
-        heroVideo.src = newSrc;
-        
-        // Show notification
-        const notification = document.createElement('div');
-        notification.innerHTML = '🔊 Hero video audio enabled';
-        notification.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background: #6366f1;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            z-index: 10000;
-        `;
-        
-        document.body.appendChild(notification);
-        
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 2000);
-        
-        // Remove listeners after activation
-        document.removeEventListener('click', enableHeroAudio);
-        document.removeEventListener('scroll', enableHeroAudio);
-    }
-}
-
-// Add listeners for hero video audio activation
-const heroVideoElement = document.getElementById('heroVideoMain');
-if (heroVideoElement) {
-    document.addEventListener('click', enableHeroAudio);
-    document.addEventListener('scroll', enableHeroAudio);
-}
+// Simplified hero video - let users control naturally through YouTube interface
+// No complex audio activation needed - users can unmute using video controls
 
 // Add CSS for notification animations
 const notificationStyles = `
